@@ -8,8 +8,7 @@ export default class Group extends React.Component {
 
   render() {
     let { name, image } = this.props;
-    let isModalOpen = this.state.isModalOpen;
-    let modal = isModalOpen ? this.getModalElement() : null;
+    let modal = this.state.isModalOpen ? this.getModalElement() : null;
 
     return (
       <div className="group-item">
@@ -26,13 +25,14 @@ export default class Group extends React.Component {
   }
 
   getModalElement = () => {
+    let { name, mission } = this.props;
     return (
-      <div className="modal">
+      <div className="modal" onClick={this.modalOnClick}>
         <div className="modal-inner">
           <div className="modal-header" />
           <div className="modal-introduction">
-            <h2>{this.props.name}</h2>
-            <p>{this.props.mission}</p>
+            <h2>{name}</h2>
+            <p>{mission}</p>
           </div>
           <button className="modal-close-btn" onClick={this.handleClickClose}>
             CLOSE
@@ -42,11 +42,11 @@ export default class Group extends React.Component {
     );
   };
 
-  handleClickOpen = () => {
-    this.setState({ isModalOpen: true });
-  };
+  handleClickOpen = () => this.setState({ isModalOpen: true });
 
-  handleClickClose = () => {
-    this.setState({ isModalOpen: false });
+  handleClickClose = () => this.setState({ isModalOpen: false });
+
+  modalOnClick = e => {
+    if (e.target.className === "modal") this.handleClickClose();
   };
 }
