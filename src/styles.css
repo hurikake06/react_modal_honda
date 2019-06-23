@@ -1,0 +1,137 @@
+html {
+  background: #f9fbfe;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  color: #2b546a;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: "Avenir Next";
+  font-size: 60px;
+  font-weight: 400;
+  padding-top: 40px;
+  color: #df0000;
+}
+
+h2,
+h3 {
+  font-family: "Lato";
+  color: #2b546a;
+  font-weight: 300;
+}
+
+p {
+  text-align: center;
+}
+
+.copy-container {
+  width: 780px;
+  margin: auto;
+}
+
+.group {
+  height: 400px;
+  width: 810px;
+  padding: 0 70px;
+  margin: auto;
+  display: flex;
+}
+
+.group-item {
+  width: 240px;
+  height: 180px;
+  background: #ffffff;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.group-name {
+  padding-top: 10%;
+  text-align: center;
+}
+
+.group-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  width: 70%;
+  padding: 40px 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.modal-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 480px;
+  padding-bottom: 60px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  text-align: center;
+  z-index: 2;
+}
+
+.modal-header {
+  height: 8px;
+  width: 100%;
+  margin-bottom: 60px;
+  border-radius: 8px 8px 0 0;
+  border-top: 10px solid #df0000;
+}
+
+.modal-introduction h2 {
+  text-align: center;
+}
+
+.modal-introduction p {
+  color: #5876a3;
+  width: 384px;
+  line-height: 30px;
+  text-align: center;
+  margin: 36px auto 40px;
+}
+
+.modal-close-btn {
+  font-size: 13px;
+  color: #8491a5;
+  width: 200px;
+  padding: 16px 0;
+  border: 0;
+  background-color: #f0f4f9;
+  cursor: pointer;
+}
+
+.modal-close-btn:hover {
+  color: #8491a5;
+  background-color: rgba(#df0000, 0.7);
+  transition: 0.3s ease-in-out;
+}
