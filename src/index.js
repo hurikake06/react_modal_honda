@@ -10,13 +10,13 @@ const companies = [
     name: "brides",
     image:
       "https://brides.a-tm.co.jp/wp-content/themes/ateam-ls2/images/common/logo.png",
-    mission: "真のユーザビリティの追求をする"
+    mission: "一組でも多くのカップルに“理想の結婚式”のきっかけを"
   },
   {
     id: 1,
     name: "hikkoshi",
     image: "https://hikkoshi.a-tm.co.jp/common/img/logo.jpg",
-    mission: "一組でも多くのカップルに“理想の結婚式”のきっかけを"
+    mission: "真のユーザビリティの追求をする"
   },
   {
     id: 2,
